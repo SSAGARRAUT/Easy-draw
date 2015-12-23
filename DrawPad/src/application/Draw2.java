@@ -1,6 +1,11 @@
+
+/**
+ * @author ${sagar raut}
+ *
+ * ${copyright (c) 2015-2016 }
+ */
+
 package application;
-
-
 import java.awt.image.RenderedImage;
 import java.io.File;
 import java.io.IOException;
@@ -8,9 +13,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import javax.imageio.ImageIO;
-
 import javafx.application.Application;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
@@ -25,6 +28,7 @@ import javafx.scene.control.Slider;
 import javafx.scene.control.Tooltip;
 import javafx.scene.effect.BoxBlur;
 import javafx.scene.effect.DropShadow;
+import javafx.scene.image.Image;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.FlowPane;
@@ -80,10 +84,7 @@ public class Draw2 extends Application {
         });
 
 
-        
-        
-        
-        lineGroup = new Group();
+    lineGroup = new Group();
     Button Clear = new Button();
         Clear.setText("Clear");
         Clear.setEffect(shadow);
@@ -274,6 +275,9 @@ public class Draw2 extends Application {
        
        
         root.getChildren().addAll(vb, lineGroup);
+        Image applicationIcon = new Image("icon.png");
+        primaryStage.getIcons().add(applicationIcon);
+        
         primaryStage.setScene(scene);
         primaryStage.show();
     }
