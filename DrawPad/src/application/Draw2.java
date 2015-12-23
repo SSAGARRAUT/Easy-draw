@@ -61,7 +61,7 @@ public class Draw2 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Draw on canvas");
+        primaryStage.setTitle("Easy Draw");
         final Group root = new Group();
         
         Scene scene = new Scene(root, 800, 600,Color.ALICEBLUE);
