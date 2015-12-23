@@ -1,6 +1,11 @@
+
+/**
+ * @author ${sagar raut}
+ *
+ * ${copyright (c) 2015-2016 }
+ */
+
 package application;
-
-
 import java.awt.image.RenderedImage;
 import java.io.File;
 import java.io.IOException;
@@ -25,6 +30,7 @@ import javafx.scene.control.Slider;
 import javafx.scene.control.Tooltip;
 import javafx.scene.effect.BoxBlur;
 import javafx.scene.effect.DropShadow;
+import javafx.scene.image.Image;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.FlowPane;
@@ -274,6 +280,9 @@ public class Draw2 extends Application {
        
        
         root.getChildren().addAll(vb, lineGroup);
+        Image applicationIcon = new Image("icon.png");
+        primaryStage.getIcons().add(applicationIcon);
+        
         primaryStage.setScene(scene);
         primaryStage.show();
     }
