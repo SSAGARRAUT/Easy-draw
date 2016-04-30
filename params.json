@@ -1,6 +1,6 @@
 {
-  "name": "Easy-draw-",
-  "tagline": "This is  Draw on canvas application created using javaFx . ",
+  "name": "Easy-draw",
+  "tagline": "Draw with Ease",
   "body": "# Easy Draw-\r\nThis is  simple Draw on canvas application developed using JavaFx which is used to draw and save the output file as (.png) image in pc directory.\r\n  How To Run :\r\n  1.To use this project open eclips and create a new javafx project.\r\n  2. Name the project as DrawPad and  copy paste the  Draw2.java file in src /application pacakge .  \r\n  3. click on run as java application , aftre successful compilation the application will run on your desktop.\r\n  4. to run jar file java runtime mevironment /Java(TM) Platform SE binary  must installed on system .\r\n  \r\n  \r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
